@@ -16,6 +16,7 @@ import ServiceDetailsGents from "./Client/pages/ServiceDetails/ServiceDetailsGen
 import ServiceDetailsKids from "./Client/pages/ServiceDetails/ServiceDetailsKids";
 import ServiceDetailsWomen from "./Client/pages/ServiceDetails/ServiceDetailsWomen";
 import cartAlert from "./Client/components/homePageSlider/components/Popup/cartAlert";
+import Services from "./Client/pages/Services";
 // admin routes
 import AdminLogin from "./Admin/pages/Login";
 import AdminDashboard from "./Admin/pages/AdminDashboard";
@@ -27,7 +28,6 @@ import Invoices from "./Admin/pages/subpages/Invoices";
 import Locations from "./Admin/pages/subpages/locations";
 import Payments from "./Admin/pages/subpages/Payments";
 import Reports from "./Admin/pages/subpages/Reports";
-import Services from "./Admin/pages/subpages/Services";
 import Settings from "./Admin/pages/subpages/Settings";
 import Staff from "./Admin/pages/subpages/Staff";
 import SideDrawer from "./Client/components/SideDrawer";
@@ -75,6 +75,7 @@ function App() {
           exact
           component={ServiceDetailsKids}
         ></Route>
+        <Route path="/Services" exact component={Services}></Route>
 
         {/* Admin routes */}
         <Route path="/admin/login" exact component={AdminLogin}></Route>

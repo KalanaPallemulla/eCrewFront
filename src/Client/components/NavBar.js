@@ -19,6 +19,11 @@ export default function NavBar({ click }) {
             <i class="fas fa-home pr-2 mt-1"></i>
             Home
           </NavLink>
+          <NavLink activeStyle={{ color: "yellow" }} to="/Services">
+            {" "}
+            <i class="fab fa-servicestack pr-2 mt-1"></i>
+            Services
+          </NavLink>
           <NavLink activeStyle={{ color: "yellow" }} to="cart">
             {" "}
             <span class="font-sans block lg:inline-block align-middle text-white">
